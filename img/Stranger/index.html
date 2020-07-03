@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="stranger_things" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <title>stranger_things</title>
+  <link rel="stylesheet" href="css/plugin/reset.css" />
+  <link rel="stylesheet" href="css/plugin/slick.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script src="js/plugin/jquery-1.8.1.min.js"></script>
+  <script src="js/plugin/respond.min.js"></script>
+  <script src="js/plugin/prefixfree.min.js"></script>
+  <script src="js/plugin/modernizr-2.8.3.min.js"></script>
+  <script src="js/plugin/jquery.easing.1.3.js"></script>
+  <script src="js/plugin/jquery.nicescroll.min.js"></script>
+  <script src="js/plugin/jquery.slides.js"></script>
+  <script src="js/plugin/slick.min.js"></script>
+  <script src="js/plugin/mgGlitch.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--[if It IE 9] <script src="js/respond.min.js"></script> <[endif]-->
+
+  <!-- Modal -->
+  <!--	  <link rel="stylesheet" href="css/modal.css">-->
+
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <link rel="favicon" href="" type="image/x-icon" />
+</head>
+
+<body>
+  <!--  <div class="posNum"></div>-->
+
+  <a href="#" class="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  <header id="header">
+    <!--        <img src="images/main/hamberger1.png">-->
+    <!--        <img src="images/main/hamberger2.png">-->
+
+    <!-- <div><a href="#scene02"></a></div>
+        <div><a href="#scene03"></a></div>
+        <div><a href="#scene04"></a></div>
+        <div><a href="#scene05"></a></div>
+        <div><a href="#scene06"></a></div> -->
+  </header>
+
+  <ul class="gnb naviJs">
+    <li>
+      <a href="#scene02"><img src="images/menu/home.png" /></a>
+    </li>
+    <li>
+      <a href="#scene03"><img src="images/menu/trailer.png" /></a>
+    </li>
+    <li>
+      <a href="#scene05"><img src="images/menu/synopsis.png" /></a>
+    </li>
+    <li>
+      <a href="#scene06"><img src="images/menu/characters.png" /></a>
+    </li>
+    <li>
+      <a href="#scene07"><img src="images/menu/gallery.png" /></a>
+    </li>
+
+    <li class="menu_icon">
+      <div>
+        <a href="https://twitter.com/stranger_things?lang=ko" target="_blank"><img src="images/menu/twitter.png"
+            alt="트위터" /></a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/strangerthingstv/?hl=ko" target="_blank"><img src="images/menu/instar.png"
+            alt="인스타그램" /></a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/StrangerThingsTV/" target="_blank"><img src="images/menu/facebook.png"
+            alt="페이스북" /></a>
+      </div>
+    </li>
+
+    <li>
+      <h1 class="logo">
+        <a href=""><img src="images/menu/small_logo.png" alt="" /></a>
+      </h1>
+    </li>
+  </ul>
+
+  <div class="scrollBox">
+    <div class="wrap">
+      <div id="scene01">
+        <div class="title">
+          <div class="glitch-img" style="
+                width: 945px;
+                height: 266px;
+                background: url('images/main/title.png') no-repeat left top;
+              "></div>
+        </div>
+
+        <!--          <div class="container">-->
+        <!--              &lt;!&ndash;<div class="glitch-img" style="background: url('http://hmongouachon.com/assets/img/demos/mosh1.jpg')"></div>&ndash;&gt;-->
+        <!--          </div>-->
+
+        <div class="netflix">
+          <a href="https://www.netflix.com/browse" target="_blank">
+            <img src="images/main/logo.png" alt="넷플릭스" />
+          </a>
+        </div>
+
+        <video id="sc01_video" src="fireworks.mp4" width="1920" autoplay muted loop></video>
+
+        <div class="srcolldown">
+          <div></div>
+        </div>
+
+        <div class="srcolldown_font">
+          <img src="images/main/scrolldown.png" />
+        </div>
+
+        <div>
+          <video class="main_tv trans" src="trailer_video.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="tv_bg"></div>
+      </div>
+
+      <div id="scene02">
+        <div class="trailer">
+          <img class="trailer_title" src="images/trailer/trailer.png" />
+        </div>
+
+        <div class="sc02_video">
+          <video class="trailer_tv" src="trailer_tv.mp4" poster="images/trailer/trailer_poster.png"></video>
+          <img class="pause" src="images/trailer/pause.png" />
+          <img class="play" src="images/trailer/play.png" />
+        </div>
+      </div>
+
+      <div id="scene03">
+        <div class="contents">
+          <img src="images/middle/itonlygetsstranger.png" />
+        </div>
+      </div>
+
+      <div id="scene04">
+        <div class="synopsis_title">
+          <img src="images/synopsis/synopsis_title.png" />
+        </div>
+
+        <div class="contents">
+          <div><img src="images/synopsis/season1_synopsis.png" /></div>
+          <div><img src="images/synopsis/season2_synopsis.png" /></div>
+          <div><img src="images/synopsis/season3_synopsis.png" /></div>
+        </div>
+
+        <div class="synopsis_bg">
+          <img src="images/synopsis/season1_img.png" />
+          <img src="images/synopsis/season2_img.png" />
+          <img src="images/synopsis/season3_img.png" />
+        </div>
+      </div>
+
+      <div id="scene05">
+        <div class="characters_title">
+          <img src="images/characters/characters.png" />
+        </div>
+
+        <div class="characters_img">
+          <img src="images/characters/eleven_img.png" alt="일레븐" />
+          <img src="images/characters/mike_img.png" alt="마이크" />
+          <img src="images/characters/will_img.png" alt="윌" />
+          <img src="images/characters/lucas_img.png" alt="루카스" />
+          <img src="images/characters/dustin_img.png" alt="더스틴" />
+          <img src="images/characters/max_img.png" alt="맥스" />
+        </div>
+
+        <div class="characters_name">
+          <div><img src="images/characters/eleven_title.png" /></div>
+          <div><img src="images/characters/mike_title.png" /></div>
+          <div><img src="images/characters/will_title.png" /></div>
+          <div><img src="images/characters/lucas_title.png" /></div>
+          <div><img src="images/characters/dustin_title.png" /></div>
+          <div><img src="images/characters/max_title.png" /></div>
+        </div>
+
+        <div class="characters_contents">
+          <div><img src="images/characters/eleven.png" /></div>
+          <div><img src="images/characters/mike.png" /></div>
+          <div><img src="images/characters/will.png" /></div>
+          <div><img src="images/characters/lucas.png" /></div>
+          <div><img src="images/characters/dustin.png" /></div>
+          <div><img src="images/characters/max.png" /></div>
+        </div>
+
+        <div class="characters_btn">
+          <img class="characters_btn_left" src="images/characters/left.png" />
+          <img class="characters_btn_right" src="images/characters/right.png" />
+        </div>
+
+        <div class="characters_bg">
+          <img src="images/characters/characters_bg.jpg" />
+        </div>
+      </div>
+
+      <div id="scene06">
+        <div class="gallery_title">
+          <img src="images/gallery/gallery.png" />
+        </div>
+
+        <div class="gallery_box">
+          <!-- 첫번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/eleven_img.png" alt="일레븐 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/eleven_img2.png" alt="일레븐 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 두번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/four.png" alt="아이들 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/four2.png" alt="아이들 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 세번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/eleven2_img.png" alt="일레븐2 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/eleven2_img2.png" alt="일레븐2 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 네번째 사진-->
+          <div>
+            <div>
+              <div><img src="images/gallery/will.png" alt="윌 확대전" /></div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/will2.png" alt="윌 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 다섯번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/billy.png" alt="빌리 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/billy2.png" alt="빌리 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 여섯번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/people.png" alt="사람들 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/people2.png" alt="사람들 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+
+          <!-- 일곱번째 사진-->
+          <div>
+            <div>
+              <div>
+                <img src="images/gallery/demo.png" alt="데모고르곤 확대전" />
+              </div>
+              <div class="border_box"></div>
+            </div>
+            <div>
+              <img class="big" src="images/gallery/demo2.png" alt="데모고르곤 확대후" />
+              <img class="box" src="images/gallery/btn.png" alt="닫기" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="scene07"></div>
+    </div>
+  </div>
+  <!--    wrap end-->
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  position: relative;
+  min-width: 1200px;
+  font-family: "Dotum", "Arial", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background: white;
+}
+
+.scrollBox {
+  min-width: 1200px;
+  height: 100%;
+  position: relative;
+}
+
+.scrollBox .wrap {
+  min-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollBox .wrap > div {
+  position: relative;
+}
+
+.scrollBox .wrap .objs > li {
+  position: absolute;
+  left: 50%;
+}
+
+#header {
+}
+
+#scene01 {
+  height: 2455px;
+}
+
+#scene01 .login {
+  position: absolute;
+  left: 50%;
+  margin-left: -618px;
+  top: 32px;
+  z-index: 9999;
+}
+
+#scene01 nav {
+  position: absolute;
+  width: 1920px;
+  height: 120px;
+  z-index: 300;
+  top: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+#scene01 nav:hover {
+  height: 305px;
+  border-bottom: 1px solid #8b8b8b;
+  background-color: white;
+}
+
+#scene01 nav .logo {
+  position: absolute;
+  left: 340px;
+  top: 80px;
+}
+
+#scene01 nav .gnb {
+  position: absolute;
+  z-index: 300;
+  left: 965px;
+  top: 85px;
+  background-color: #fff;
+}
+
+#scene01 nav .mega_info {
+  position: absolute;
+  left: 340px;
+  top: 134px;
+}
+
+#scene01 .gnb > li {
+  display: inline-block;
+}
+
+#scene01 .gnb > li > a {
+  display: block;
+}
+
+#scene01 .gnb > li > .mega_menu {
+}
+
+#scene01 .gnb > li:nth-child(1) {
+  margin-right: 76px;
+}
+
+#scene01 .gnb > li:nth-child(2) {
+  margin-right: 84px;
+}
+
+#scene01 .gnb > li:nth-child(3) {
+  margin-right: 82px;
+}
+
+#scene01 .gnb > li:nth-child(4) {
+  margin-right: 93px;
+}
+
+#scene01 > nav > .gnb > li > .mega_menu > li > a {
+  display: block;
+  position: absolute;
+  top: 50px;
+}
+
+#scene01 .home {
+  position: absolute;
+  top: 544px;
+  left: 340px;
+  z-index: 100;
+}
+
+#scene01 .home img:nth-child(2) {
+  margin-left: -4px;
+}
+
+#scene01 .page {
+  position: absolute;
+  top: 130px;
+}

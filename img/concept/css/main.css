@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+html,
+body {
+    height: 100%;
+    overflow-y: hidden
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: white
+}
+
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden
+}
+
+.scrollBox .wrap>div {
+    position: relative
+}
+
+.scrollBox .wrap .objs>li {
+    position: absolute;
+    left: 50%
+}
+
+#scene01 {
+    width: 1920px;
+    height: 980px;
+}
+
+
+#scene02 {
+    width: 1920px;
+    height: 980px;
+}
+
+
+#scene03 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene04 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene05 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene06 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene07 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene07>.main_video>img {
+    position: absolute;
+    left: 769px;
+    top: 120px;
+    z-index: 9999;
+}
+
+#scene07>.main_video>video {
+    position: absolute;
+    left: 797px;
+    top: 137px;
+    width: 338px;
+    height: 734px;
+    z-index: 100;
+}
+
+
+#scene08 {
+    width: 1920px;
+    height: 1583px;
+}
+
+#scene08 .login>img {
+    position: absolute;
+    left: 578px;
+    top: 297px;
+    z-index: 9999;
+}
+
+#scene08 .login>video {
+    position: absolute;
+    left: 577px;
+    top: 313px;
+    width: 352px;
+    height: 668px;
+    z-index: 100;
+}
+
+#scene08 .check_in>img {
+    position: absolute;
+    left: 1041px;
+    top: 808px;
+    z-index: 9999;
+}
+
+#scene08 .check_in>video {
+    position: absolute;
+    left: 1041px;
+    top: 822px;
+    width: 352px;
+    height: 673px;
+    z-index: 100;
+}
+
+
+}
+
+#scene09 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene09>div>img {
+    position: absolute;
+    left: 440px;
+    top: 133px;
+    z-index: 9999;
+}
+
+#scene09>div>video {
+    position: absolute;
+    left: 467px;
+    top: 150px;
+    width: 338px;
+    height: 734px;
+}
+
+#scene10 {
+    width: 1920px;
+    height: 980px;
+}
+
+#scene11 {
+    position: relative;
+    width: 1920px;
+    height: 980px;
+    background-color: black;
+}
+
+#scene11 .light>img:nth-child(1) {
+    position: absolute;
+    top: 122px;
+    left: 335px;
+    cursor: pointer;
+}
+
+#scene11 .dark {
+    display: none;
+}
+
+#scene11 .dark>img:nth-child(1) {
+    position: absolute;
+    top: 122px;
+    left: 335px;
+    cursor: pointer;
+}
+
+#scene12 {
+    width: 1920px;
+    height: 980px;
+}

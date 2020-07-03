@@ -1,0 +1,213 @@
+/*=============
+   Reset CSS
+==============*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block
+}
+
+ol,
+ul {
+   list-style: none
+}
+
+blockquote,
+q {
+   quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0
+}
+
+img {
+   vertical-align: top
+}
+
+a {
+   text-decoration: none;
+   outline: 0
+}
+
+.clearfix {
+   *zoom: 1
+}
+
+.clearfix:after {
+   content: "";
+   display: block;
+   clear: both
+}
+
+#fp-nav {
+   display: none;
+}
+
+#fullpage>div {
+   position: relative;
+}
+
+#section01 {
+   background: url("stranger_bg.png")no-repeat center top;
+   width: 1920px;
+   height: 1080px;
+}
+
+#section01>div>div>a>img {
+   position: absolute;
+   top: 702px;
+   left: 222px;
+}
+
+#section02 {
+   background: url("twosome_bg.png")no-repeat center top;
+   width: 1920px;
+   height: 1080px;
+}
+
+#section02>div>div>a>img {
+   position: absolute;
+   top: 702px;
+   left: 222px;
+}
+
+#section03 {
+   background: url("mobile_bg.png")no-repeat center top;
+   width: 1920px;
+   height: 1080px;
+}
+
+#section03>div>div>a>img {
+   position: absolute;
+   top: 702px;
+   left: 222px;
+}
+
+#section04 {
+   background: url("lol_bg.png")no-repeat center top;
+   width: 1920px;
+   height: 1080px;
+}
+
+#section04>div>div>a>img {
+   position: absolute;
+   top: 702px;
+   left: 222px;
+}
+
+#section05 {
+   background: url("kakao_friends_bg.png")no-repeat center top;
+   width: 1920px;
+   height: 1080px;
+}
+
+#section05>div>div>a>img {
+   position: absolute;
+   top: 702px;
+   left: 222px;
+}

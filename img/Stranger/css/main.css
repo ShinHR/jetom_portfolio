@@ -1,0 +1,1252 @@
+@charset "utf-8";
+
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  position: relative;
+  min-width: 1200px;
+  font-family: "Dotum", "Arial", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background: white;
+}
+
+/* .posNum {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 300px;
+      height: 50px;
+      margin: -25px 0 0 -150px;
+      background: #111;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      z-index: 9999
+    } */
+
+.scrollBox {
+  min-width: 1200px;
+  height: 100%;
+  position: relative;
+}
+
+.scrollBox .wrap {
+  width: 1920px;
+  min-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollBox .wrap>div {
+  position: relative;
+}
+
+.scrollBox .wrap .objs>li {
+  position: absolute;
+  left: 50%;
+}
+
+.menu {
+  width: 48px;
+  height: 48px;
+  /*background: white;*/
+  position: fixed;
+  /*opacity: 21%;*/
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+
+.menu>span {
+  position: absolute;
+  height: 5px;
+  width: 34px;
+  background: #ffffff;
+  top: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  z-index: 9999;
+}
+
+.menu>span:nth-child(1) {
+  top: 0;
+}
+
+.menu>span:nth-child(2),
+.menu>span:nth-child(3) {
+  top: 13px;
+}
+
+.menu>span:nth-child(4) {
+  top: 26px;
+}
+
+.menu.active>span {
+  /*background: #00b7ff;*/
+}
+
+.menu.active>span:nth-child(1),
+.menu.active>span:nth-child(4) {
+  opacity: 0;
+}
+
+.menu.active>span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.active>span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/*.overlay.visible{*/
+/*  */
+
+/*}*/
+
+/*.overlay{*/
+/*  position: fixed;*/
+/*  background: white;*/
+/*  z-index: 6200;*/
+/*  width: 100%;*/
+/*  height: 0;*/
+/*  opacity: 0;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  transition: 0.3s;*/
+/*}*/
+
+.gnb {
+  width: 1920px;
+  height: 1249px;
+  background: url(../images/menu/bg.png) no-repeat;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9200;
+  opacity: 0;
+  padding-top: 200px;
+  visibility: hidden;
+}
+
+.gnb.visible {
+  visibility: visible;
+  height: 980px;
+  opacity: 1;
+}
+
+.gnb>li:nth-child(1) {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/white_line01.png") no-repeat left center;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-bottom: 100px;
+}
+
+.gnb>li:nth-child(1).on {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/red_line01.png") no-repeat left center;
+  animation: bar_red forwards 0.5s linear;
+  position: absolute;
+  left: 50%;
+}
+
+.gnb>li:nth-child(1).on2 {
+  width: 242px;
+  height: 69px;
+  background: url("../images/menu/home_on.png") no-repeat;
+  position: absolute;
+}
+
+.gnb>li:nth-child(2) {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/white_line01.png") no-repeat left center;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 120px;
+}
+
+.gnb>li:nth-child(2).on {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/red_line01.png") no-repeat left center;
+  animation: bar_red forwards 0.5s linear;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 120px;
+}
+
+.gnb>li:nth-child(3) {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/white_line01.png") no-repeat left center;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 240px;
+}
+
+.gnb>li:nth-child(3).on {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/red_line01.png") no-repeat left center;
+  animation: bar_red forwards 0.5s linear;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 240px;
+}
+
+.gnb>li:nth-child(4) {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/white_line01.png") no-repeat left center;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 390px;
+}
+
+.gnb>li:nth-child(4).on {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/red_line01.png") no-repeat left center;
+  animation: bar_red forwards 0.5s linear;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 390px;
+}
+
+.gnb>li:nth-child(5) {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/white_line01.png") no-repeat left center;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 525px;
+}
+
+.gnb>li:nth-child(5).on {
+  width: 37px;
+  height: 69px;
+  background: url("../images/menu/red_line01.png") no-repeat left center;
+  animation: bar_red forwards 0.5s linear;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 525px;
+}
+
+.gnb>li>a {
+  display: block;
+  margin-left: 70px;
+}
+
+@keyframes bar_red {
+  from {
+    width: 0px;
+    height: 69px;
+  }
+
+  to {
+    width: 50px;
+    height: 69px;
+  }
+}
+
+li.menu_icon>div {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+
+li.menu_icon>div:nth-child(1) {
+  padding-right: 100px;
+  top: 45px;
+}
+
+li.menu_icon>div:nth-child(2) {
+  padding-right: 50px;
+  top: 45px;
+}
+
+li.menu_icon>div:nth-child(3) {
+  top: 45px;
+}
+
+li>.logo {
+  margin: 700px 60px;
+}
+
+#scene01 {
+  height: 1954px;
+  background: black;
+}
+
+#scene01 .netflix {
+  position: relative;
+  top: 45px;
+  left: 1720px;
+  z-index: 200;
+}
+
+#scene01 .title {
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  margin-left: -472.5px;
+  width: calc(100% - 160px);
+  height: calc(100% - 160px);
+  overflow: hidden;
+  display: none;
+}
+
+/* glitch elem must have absolute position */
+#scene01 .title .glitch-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+}
+
+#scene01 .main_tv {
+  position: absolute;
+  bottom: 98px;
+  overflow: hidden;
+}
+
+#scene01 .trans {
+  height: 5.3%;
+  transform: perspective(600px) rotateY(45deg) scale(1.1, 1.1);
+  z-index: 5;
+  left: 320px;
+  bottom: 100px;
+}
+
+#scene01 .tv_bg {
+  background-image: url(../images/main/smalltv_2.png);
+  background-repeat: no-repeat;
+  background-size: 210px 100%;
+  height: 150px;
+  bottom: 270px;
+  left: 300px;
+  position: relative;
+  z-index: 10;
+}
+
+#scene01 .srcolldown {
+  width: 101px;
+  height: 67px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: 220px;
+}
+
+#scene01 .srcolldown>div:nth-child(1) {
+  width: 29px;
+  height: 0px;
+  background: url("../images/main/scroll.png") no-repeat left top;
+  /*margin: 0 auto 12px;*/
+  animation: scroll_down 1.2s ease-in-out infinite;
+  transition: all 0.5s;
+}
+
+@keyframes scroll_down {
+  0% {
+    width: 29px;
+    height: 0px;
+  }
+
+  50% {
+    width: 29px;
+    height: 29px;
+  }
+
+  100% {
+    width: 29px;
+    height: 37px;
+  }
+}
+
+#scene01 .srcolldown_font {
+  position: absolute;
+  left: 50%;
+  margin-left: -51.5px;
+  bottom: 222px;
+  z-index: 200;
+}
+
+#sc01_video {
+  background-size: cover;
+  width: 1920px !important;
+  /*height:100%;*/
+}
+
+#scene02 {
+  height: 1269px;
+  background: black;
+}
+
+#scene02 .sc02_video {
+  width: 1336px;
+  height: 700px;
+  /*background: orange;*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -350px 0 0 -670px;
+}
+
+#scene02 .sc02_video .trailer_tv {
+  position: absolute;
+}
+
+#scene02 .sc02_video .play {
+  position: absolute;
+  left: 50%;
+  margin-left: -185px;
+  top: 360px;
+}
+
+#scene02 .sc02_video .pause {
+  position: absolute;
+  left: 50%;
+  margin-left: -185px;
+  top: 360px;
+  opacity: 0;
+}
+
+/***********************/
+/* 애니메이션 효과 시작 */
+#scene02 .trailer_title {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  margin-left: -184.5px;
+  opacity: 0;
+}
+
+#scene02 .trailer_title.on {
+  transform: translate(0, 50px);
+  animation: title forwards 0.25s linear;
+  opacity: 0;
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* 애니메이션 효과 마침 */
+/**********************/
+#scene03 {
+  width: 1920px;
+  background: url("../images/middle/bg2.png") no-repeat center right fixed;
+  position: relative;
+  height: 418px;
+}
+
+#scene03 .contents {
+  width: 437px;
+  height: 45px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -218.5px;
+}
+
+#scene03 .contents>img {
+  position: absolute;
+}
+
+#scene03 .contents>img:nth-child(1) {
+  z-index: 200;
+}
+
+#scene04 {
+  height: 1346px;
+  background: black;
+  position: relative;
+}
+
+/***********************/
+/* 애니메이션 효과 시작 */
+#scene04 .synopsis_title {
+  width: 442px;
+  height: 115px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -221px;
+  opacity: 0;
+}
+
+#scene04 .synopsis_title.on {
+  width: 442px;
+  height: 115px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -221px;
+  transform: translate(0, 50px);
+  opacity: 0;
+  animation: synopsis_title forwards 0.25s linear;
+}
+
+@keyframes synopsis_title {
+  from {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* 애니메이션 효과 마침 */
+/**********************/
+#scene04 .synopsis_bg {
+  position: absolute;
+  width: 1920px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#scene04 .synopsis_bg .slick-dots {
+  width: 542px;
+  position: absolute;
+  top: -185px;
+  left: 50%;
+  margin-left: -271px;
+}
+
+#scene04 .synopsis_bg .slick-dots li {
+  width: 167px;
+  height: 47px;
+  float: left;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(2) {
+  margin: 0 20px;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(1) {
+  background: url("../images/synopsis/season1.png") no-repeat left top;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(2) {
+  background: url("../images/synopsis/season2.png") no-repeat left top;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(3) {
+  background: url("../images/synopsis/season3.png") no-repeat left top;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(1).slick-active {
+  width: 167px;
+  height: 47px;
+  background: url("../images/synopsis/season1_on.png") no-repeat left top;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(2).slick-active {
+  width: 167px;
+  height: 47px;
+  background: url("../images/synopsis/season2_on.png") no-repeat left top;
+}
+
+#scene04 .synopsis_bg .slick-dots li:nth-child(3).slick-active {
+  width: 167px;
+  height: 47px;
+  background: url("../images/synopsis/season3_on.png") no-repeat left top;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+#scene04 .contents {
+  width: 1153px;
+  height: 129px;
+  margin: 0 auto;
+  z-index: 100;
+  padding-top: 400px;
+}
+
+#scene04 .contents>div {
+  width: 1153px;
+  height: 129px;
+  position: absolute;
+  z-index: 9100;
+  text-align: center;
+}
+
+#scene04 .contents>div:nth-child(2),
+#scene04 .contents>div:nth-child(3) {
+  display: none;
+}
+
+#scene05 {
+  height: 1152px;
+  background: url("../images/characters/background.png") no-repeat left top;
+}
+
+/***********************/
+/* 애니메이션 효과 시작 */
+#scene05 .characters_title {
+  position: absolute;
+  top: 136px;
+  left: 50%;
+  margin-left: -285px;
+  opacity: 0;
+}
+
+#scene05 .characters_title.on {
+  transform: translate(0, 50px);
+  animation: characters_title forwards 0.25s linear;
+  opacity: 0;
+}
+
+@keyframes characters_title {
+  from {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* 애니메이션 효과 마침 */
+/**********************/
+
+#scene05 .characters_img {
+  width: 703px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  margin-left: -200px;
+  transform: translate(-50%, -50%);
+  z-index: 9000;
+}
+
+#scene05 .characters_img .slick-slide img {
+  width: 100%;
+}
+
+#scene05 .characters_img .slick-slide {
+  margin-right: 5px !important;
+  /*slide간의 여백 설정 */
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+#scene05 .characters_img .slick-current {
+  opacity: 1;
+}
+
+#scene05 .characters_img .slick-active {}
+
+#scene05 .characters_img .slick-dots li.slick-active {}
+
+#scene05 .characters_img .slick-dots li button {
+  display: none;
+  text-indent: -9999px;
+}
+
+#scene05 .characters_name {
+  width: 263px;
+  height: 102px;
+  position: relative;
+  top: 480px;
+  left: 1000px;
+  z-index: 100;
+}
+
+#scene05 .characters_name>div:nth-child(1) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 1;
+}
+
+#scene05 .characters_name>div:nth-child(2) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+}
+
+#scene05 .characters_name>div:nth-child(3) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+}
+
+#scene05 .characters_name>div:nth-child(4) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+}
+
+#scene05 .characters_name>div:nth-child(5) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+}
+
+#scene05 .characters_name>div:nth-child(6) {
+  width: 286px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  opacity: 0;
+}
+
+/*#scene05 .characters_name > div:nth-child(1).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+/*#scene05 .characters_name > div:nth-child(2).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+/*#scene05 .characters_name > div:nth-child(3).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+/*#scene05 .characters_name > div:nth-child(4).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+/*#scene05 .characters_name > div:nth-child(5).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+/*#scene05 .characters_name > div:nth-child(6).on{*/
+/*    transform: translate(300px, 0);*/
+/*    opacity : 0;*/
+/*}*/
+
+#scene05 .characters_contents>div {
+  position: absolute;
+  bottom: 375px;
+  right: 600px;
+  z-index: 100;
+}
+
+#scene05 .characters_contents>div:nth-child(2),
+#scene05 .characters_contents>div:nth-child(3),
+#scene05 .characters_contents>div:nth-child(4),
+#scene05 .characters_contents>div:nth-child(5),
+#scene05 .characters_contents>div:nth-child(6) {
+  right: 0;
+  display: none;
+}
+
+#scene05 .characters_bg {
+  position: absolute;
+  left: 500px;
+  bottom: 280px;
+}
+
+#scene05 .characters_btn {
+  position: absolute;
+  left: 340px;
+  bottom: 505px;
+  cursor: pointer;
+}
+
+#scene05 .characters_btn .characters_btn_right {
+  position: absolute;
+  left: 1230px;
+}
+
+#scene05 .characters_btn_right {
+  position: absolute;
+  bottom: -1px;
+}
+
+#scene06 {
+  height: 1966px;
+  background: black;
+}
+
+/***********************/
+/* 애니메이션 효과 시작 */
+#scene06 .gallery_title {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -190px;
+  opacity: 0;
+}
+
+#scene06 .gallery_title.on {
+  transform: translate(0, 50px);
+  opacity: 0;
+  animation: gallery_title forwards 0.25s linear;
+}
+
+@keyframes gallery_title {
+  from {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* 애니메이션 효과 마침 */
+/**********************/
+
+#scene06 .gallery_box {
+  width: 1280px;
+  height: 1576px;
+  position: relative;
+  left: 50%;
+  margin-left: -645.5px;
+  bottom: -320px;
+  background: black;
+  z-index: 9000;
+  cursor: pointer;
+}
+
+#scene06 .gallery_box>div:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/***************/
+/* 사진 위치값 */
+#scene06 .gallery_box>div:nth-child(1)>div:nth-child(1) {}
+
+#scene06 .gallery_box>div:nth-child(1)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -470px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(1)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(1)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
+  width: 303px;
+  height: 222px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 두번째 */
+#scene06 .gallery_box>div:nth-child(2)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -450px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(2)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(2)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+  width: 583px;
+  height: 437px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 세번째 */
+#scene06 .gallery_box>div:nth-child(3)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -450px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(3)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(3)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
+  width: 557px;
+  height: 758px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 네번째 */
+#scene06 .gallery_box>div:nth-child(4)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -450px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(4)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(4)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(4)>div:nth-child(1)>div:nth-child(2) {
+  width: 184px;
+  height: 350px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 다섯번째 */
+#scene06 .gallery_box>div:nth-child(5)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -448px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(5)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(5)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(5)>div:nth-child(1)>div:nth-child(2) {
+  width: 267px;
+  height: 324px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 여섯번째 */
+#scene06 .gallery_box>div:nth-child(6)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -451px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(6)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(6)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(6)>div:nth-child(1)>div:nth-child(2) {
+  width: 447px;
+  height: 412px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 일곱번째 */
+#scene06 .gallery_box>div:nth-child(7)>div:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -452px 0 0 -577px;
+  z-index: 100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(7)>div:nth-child(2) .box {
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  right: 56px;
+  top: 50px;
+  z-index: 200;
+}
+
+#scene06 .gallery_box>div:nth-child(7)>div:nth-child(1)>div {
+  position: absolute;
+}
+
+#scene06 .gallery_box>div:nth-child(7)>div:nth-child(1)>div:nth-child(2) {
+  width: 418px;
+  height: 271px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* 사진 위치값 마침 */
+/******************/
+
+#scene06 .gallery_box>div:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  margin-left: -138px;
+  top: 160px;
+}
+
+#scene06 .gallery_box>div:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  margin-left: -415px;
+  top: 397px;
+}
+
+#scene06 .gallery_box>div:nth-child(4) {
+  position: absolute;
+  top: 806px;
+}
+
+#scene06 .gallery_box>div:nth-child(5) {
+  position: absolute;
+  left: 50%;
+  margin-left: 208px;
+  top: 690px;
+}
+
+#scene06 .gallery_box>div:nth-child(6) {
+  position: absolute;
+  right: 446px;
+  bottom: 470px;
+}
+
+#scene06 .gallery_box>div:nth-child(7) {
+  position: absolute;
+  bottom: 270px;
+  margin-left: 55px;
+}
+
+/***************/
+/* 확대시 위치 */
+
+#scene06 .gallery_box>div>img:nth-child(2) {
+  display: none;
+}
+
+#scene06 .gallery_box>div .box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 9100;
+}
+
+#scene06 .gallery_box>div:nth-child(1)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(2)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(3)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(4)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(5)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(6)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene06 .gallery_box>div:nth-child(7)>img:nth-child(2) {
+  width: 1154px;
+  height: 891px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -445px;
+  z-index: 9100;
+  display: none;
+}
+
+#scene07 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 600px;
+  /*height: 980px;*/
+}

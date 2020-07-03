@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  position: relative;
+  min-width: 1200px;
+  font-family: "Dotum", "Arial", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background: white;
+}
+
+
+
+.scrollBox {
+  min-width: 1200px;
+  height: 100%;
+  position: relative;
+}
+
+.scrollBox .wrap {
+  min-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollBox .wrap>div {
+  position: relative;
+}
+
+.scrollBox .wrap .objs>li {
+  position: absolute;
+  left: 50%;
+}
+
+#header {}
+
+#scene01 {
+  height: 1279px;
+  background: white;
+}
+
+#scene01 .login {
+  position: absolute;
+  left: 50%;
+  margin-left: -618px;
+  top: 32px;
+  z-index: 9999;
+}
+
+#scene01 nav {
+  position: absolute;
+  width: 1920px;
+  height: 120px;
+  z-index: 300;
+  top: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+#scene01 nav:hover {
+  height: 305px;
+  border-bottom: 1px solid #8b8b8b;
+  background-color: white;
+}
+
+#scene01 nav .logo {
+  position: absolute;
+  left: 340px;
+  top: 80px;
+}
+
+#scene01 nav .gnb {
+  position: absolute;
+  z-index: 300;
+  left: 965px;
+  top: 85px;
+  background-color: #fff;
+}
+
+#scene01 nav .mega_info {
+  position: absolute;
+  left: 340px;
+  top: 134px;
+}
+
+#scene01 .gnb>li {
+  display: inline-block;
+}
+
+#scene01 .gnb>li>a {
+  display: block;
+}
+
+#scene01 .gnb>li>.mega_menu {}
+
+#scene01 .gnb>li:nth-child(1) {
+  margin-right: 76px;
+}
+
+#scene01 .gnb>li:nth-child(2) {
+  margin-right: 84px;
+}
+
+#scene01 .gnb>li:nth-child(3) {
+  margin-right: 82px;
+}
+
+#scene01 .gnb>li:nth-child(4) {
+  margin-right: 93px;
+}
+
+#scene01>nav>.gnb>li>.mega_menu>li>a {
+  display: block;
+  position: absolute;
+  top: 50px;
+}
+
+#scene01 .banner {
+  position: absolute;
+  width: 1920px;
+  height: 414px;
+  top: 130px;
+}
+
+#scene01 .home {
+  position: absolute;
+  top: 544px;
+  left: 340px;
+  z-index: 100;
+}
+
+#scene01 .home img:nth-child(2) {
+  margin-left: -4px;
+}
+
+#scene01 .line {
+  position: absolute;
+  top: 594px;
+  width: 1920px;
+  border: 0.5px solid #e6e6e6;
+  z-index: 200;
+}
+
+#scene01 .new_menu {
+  position: relative;
+}
+
+#scene01 .new_menu .new_menu_title {
+  position: absolute;
+  top: 678px;
+  left: 867px;
+}
+
+#scene01 .new_menu .new_prev_arrows {
+  position: absolute;
+  top: 931px;
+  left: 359px;
+  cursor: pointer;
+}
+
+#scene01 .new_menu .new_next_arrows {
+  position: absolute;
+  top: 931px;
+  right: 359px;
+  cursor: pointer;
+}
+
+#scene01 .new_menu .new_menu_img {
+  position: absolute;
+  width: 906px;
+  height: 336px;
+  transform: translate(-50%, 0);
+  top: 810px;
+  left: 50%;
+}
+
+#scene01 .new_menu .new_menu_img .slick-slide img:nth-child(1) {
+  width: 183px;
+  height: 319px;
+}
+
+#scene01 .new_menu .new_menu_img .slick-slide img:nth-child(2) {
+  width: 188px;
+  height: 336px;
+}
+
+#scene01 .new_menu .new_menu_img .slick-slide img:nth-child(3) {
+  width: 167px;
+  height: 311px;
+}
+
+#scene01 .new_menu .new_menu_img .slick-slide {
+  margin-right: 184px !important;
+  transition: all 0.5s;
+}
+
+#scene01 .new_menu .new_menu_img .slick-list {}
+
+#scene01 .new_menu .new_menu_img .slick-current {
+  opacity: 1;
+}
+
+#scene01 .new_menu .new_menu_img .slick-active {}
+
+#scene01 .new_menu .new_menu_img .slick-dots li button {
+  display: none;
+}
+
+#scene02 {
+  height: 1817px;
+  background-color: white;
+}
+
+/* 2792px */
+
+#scene02 .filter {
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+}
+
+#scene02 .search {
+  position: absolute;
+  top: 102px;
+  left: 369px;
+}
+
+#drink>div:nth-child(1) {
+  position: absolute;
+  top: 215px;
+  left: 369px;
+}
+
+#drink>.hover>img:nth-child(1) {
+  position: absolute;
+  top: 215px;
+  left: 786px;
+}
+
+#drink>.hover>img:nth-child(2) {
+  position: absolute;
+  top: 215px;
+  left: 786px;
+  width: 370px;
+  height: 451px;
+  display: none;
+}
+
+#drink>.hover>img:nth-child(3) {
+  position: absolute;
+  left: 362.5px;
+  top: 728px;
+  z-index: 300;
+  display: none;
+}
+
+#drink>div:nth-child(3) {
+  position: absolute;
+  top: 215px;
+  right: 346px;
+}
+
+#drink2>div:nth-child(1) {
+  position: absolute;
+  top: 747px;
+  left: 369px;
+}
+
+#drink2>div:nth-child(2) {
+  position: absolute;
+  top: 747px;
+  left: 786px;
+}
+
+#drink2>div:nth-child(3) {
+  position: absolute;
+  top: 747px;
+  right: 346px;
+}
+
+#drink3>div:nth-child(1) {
+  position: absolute;
+  top: 1267px;
+  left: 369px;
+}
+
+#drink3>div:nth-child(2) {
+  position: absolute;
+  top: 1267px;
+  left: 786px;
+}
+
+#drink3>div:nth-child(3) {
+  position: absolute;
+  top: 1267px;
+  right: 346px;
+}
+
+#footer {
+  height: 398px;
+  background: #0f0f0f;
+  position: relative;
+}
