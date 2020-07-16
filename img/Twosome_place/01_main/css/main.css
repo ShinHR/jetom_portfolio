@@ -157,6 +157,7 @@ body {
 }
 
 #scene01 .main_banner .slick-dots li {
+  cursor: pointer;
   width: 321px;
   height: 67px;
   transition: all 1s;
@@ -311,27 +312,6 @@ body {
 
 #scene01 .best_menu .best_menu_img .slick-dots {}
 
-/* #scene01 .best_menu .best_menu_img .slick-dots li:nth-child(1) {
-  width: 0px;
-  height: 3px;
-  transition: all 1s;
-  background: gray;
-  position: absolute;
-  left: 621px;
-  top: -125px;
-  animation: meun_line 0.5s forwards linear;
-}
-
-@keyframes meun_line {
-  from {
-    width: 0px;
-  }
-
-  to {
-    width: 60px;
-  }
-} */
-
 
 #scene01 .best_menu .best_menu_img .slick-dots li button {
   display: none;
@@ -384,6 +364,7 @@ body {
 }
 
 #scene04 .tag>img {
+  cursor: pointer;
   padding-left: 10px;
 }
 

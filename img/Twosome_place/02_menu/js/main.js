@@ -43,6 +43,7 @@ $(document).ready(function () {
 
 
   $('#drink > .hover > img:nth-child(1)').mouseenter(function () {
+    $('#drink > .hover > img:nth-child(2)').css('cursor', 'pointer');
     $('#drink > .hover > img:nth-child(2)').fadeIn();
   });
 
@@ -51,7 +52,7 @@ $(document).ready(function () {
   });
 
   $('#drink > .hover > img:nth-child(2)').click(function () {
-
+    $('#drink > .hover > img:nth-child(3)').css('cursor', 'pointer');
     $('#drink > .hover > img:nth-child(3)').fadeIn();
     $('#scene02').stop().animate({
       height: "2791"
@@ -100,7 +101,7 @@ $(function () {
     var a = $(".scrollBox").scrollTop();
     $(".posNum").text(a);
     // var drop = true
-    if (a >= 100 && a <= 500 && drop) {}
+    if (a >= 100 && a <= 500 && drop) { }
     // $("").addClass("on");
     // $('#header').addClass('wheel');
 
